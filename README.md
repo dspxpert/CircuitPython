@@ -1,7 +1,7 @@
 # CircuitPython
 
-CircuitPython for Raspberry Pi Pico Download
+CircuitPython for Raspberry Pi Pico : 
 https://circuitpython.org/board/raspberry_pi_pico/
 
-CircuitPython Libraries
+CircuitPython Libraries : 
 https://circuitpython.org/libraries

@@ -2,7 +2,6 @@ import time
 import random
 import usb_midi
 import adafruit_midi
-import time
 import board
 import digitalio
 

@@ -59,10 +59,10 @@ for btn in buttons:
     btn.pull = digitalio.Pull.UP
 
 while True:
-    for i in range(len(buttons)):
-        if buttons[i].value != buttons_prev[i]:
-            buttons_prev[i] = buttons[i].value
-            if buttons[i].value == 0:
+    for i, button in enumerate(buttons):
+        if button.value != buttons_prev[i]:
+            buttons_prev[i] = button.value
+            if button.value == 0:
                 midi.send([NoteOn(note, 60) for note in note_mapping[i]])
                 print(f'Note {note_mapping[i]} On')
                 led.value = 1
